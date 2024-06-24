@@ -1,0 +1,13 @@
+<!-- Arquivo: res/drawable/custom_button_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/custom_button_pressed_color" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/custom_button_normal_color" />
+        </shape>
+    </item>
+</selector>

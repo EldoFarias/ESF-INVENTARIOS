@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="backgroundItemEndereco">#F8F6E3</color>
+    <color name="textItemEndereco">#FFFFFF</color>
+    <color name="backgrounTelaContagem">#CCCCCC</color>
+    <color name="backgrounTelaContagem2">#EFEFEF</color>
+    <color name="backgrounFundoTelas">#F8F8F8</color>
+    <color name="backgrounItemUsuario">#E1F8F5</color>
+    <color name="campoQuantidade">#FF9494</color>
+
+
+    <color name="verde">#BAFFBD</color>
+    <color name="vermelho">#FF1100</color>
+
+
+    <color name="color_primary_dark">#212121</color>
+    <color name="color_primary_variant_dark">#121212</color>
+    <color name="color_on_primary_dark">#FFFFFF</color>
+    <color name="color_secondary_dark">#FFA000</color>
+    <color name="color_secondary_variant_dark">#03DAC6</color>
+    <color name="color_on_secondary_dark">#FFFFFF</color>
+    <color name="color_background_dark">#121212</color>
+
+    <!-- Cores do Tema Azul Celeste -->
+    <color name="color_primary_celeste">#2196F3</color>
+    <color name="color_primary_variant_celeste">#E3F2FD</color>
+    <color name="color_on_primary_celeste">#FFFFFF</color>
+    <color name="color_secondary_celeste">#FFEB3B</color>
+    <color name="color_secondary_variant_celeste">#4CAF50</color>
+    <color name="color_on_secondary_celeste">#FFFFFF</color>
+    <color name="color_background_celeste">#E3F2FD</color>
+
+    <!-- Cores do Tema Cinza Urbano -->
+    <color name="color_primary_urbano">#607D8B</color>
+    <color name="color_primary_variant_urbano">#ECEFF1</color>
+    <color name="color_on_primary_urbano">#FFFFFF</color>
+    <color name="color_secondary_urbano">#52859E</color>
+    <color name="color_secondary_variant_urbano">#8BC34A</color>
+    <color name="color_on_secondary_urbano">#FFFFFF</color>
+    <color name="color_background_urbano">#ECEFF1</color>
+
+    <!-- Cores do Tema Noturno -->
+    <color name="color_primary_night">#263238</color>
+    <color name="color_primary_variant_night">#37474F</color>
+    <color name="color_on_primary_night">#FFFFFF</color>
+    <color name="color_secondary_night">#FF4081</color>
+    <color name="color_secondary_variant_night">#00BCD4</color>
+    <color name="color_on_secondary_night">#FFFFFF</color>
+    <color name="color_background_night">#37474F</color>
+
+
+    <color name="preto">#000000</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="cinza">#E6E6E6</color>
+    <color name="azul">#60B3D8</color>
+
+    <color name="track_color_off">#FF0000</color>
+    <color name="thumb_color_off">#FFFF00</color>
+    <color name="track_color_on">#00FF00</color>
+    <color name="thumb_color_on">#0000FF</color>
+
+    <!-- Arquivo: res/values/colors.xml -->
+
+    <color name="custom_button_normal_color">#FF6200EE</color>
+    <color name="custom_button_pressed_color">#FF3700B3</color>
+    <color name="custom_button_text_color">#FFFFFF</color>
+    <color name="custom_dialog_text_color">#333333</color>
+    <color name="custom_button_background">#FFFFFF</color>
+
+
+
+    <color name="amarelo">#FFF42B</color>
+
+
+</resources>

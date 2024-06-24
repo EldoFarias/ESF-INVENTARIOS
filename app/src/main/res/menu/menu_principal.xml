@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_configuracoes"
+        android:orderInCategory="90"
+        android:title="Configurações" />
+
+    <item
+        android:id="@+id/menu_cadastro_produto"
+        android:orderInCategory="100"
+        android:title="Cadastro Produto" />
+
+    <item
+        android:id="@+id/menu_cadastrar_endereco"
+        android:orderInCategory="110"
+        android:title="Cadastro Endereço" />
+
+
+    <item
+        android:id="@+id/menu_analisar_contagens"
+        android:orderInCategory="129"
+        android:title="Analisar Contagens" />
+
+    <item
+        android:id="@+id/menu_relatorio_contagens"
+        android:orderInCategory="130"
+        android:title="Relatório Contagem" />
+
+    <item
+        android:id="@+id/menu_gerar_backup"
+        android:orderInCategory="140"
+        android:title="Gerar Back-up" />
+
+    <item
+        android:id="@+id/menu_restaurar_backup"
+        android:orderInCategory="150"
+        android:title="Restaurar Back-up" />
+
+    <item
+        android:id="@+id/menu_exportar_contagens"
+        android:orderInCategory="136"
+        android:title="Exportar Contagens" />
+
+    <item
+        android:id="@+id/menu_excluir_banco"
+        android:orderInCategory="180"
+        android:title="Excluir Banco Dados" />
+
+    <item
+        android:id="@+id/menu_sair"
+        android:orderInCategory="910"
+        android:title="Sair" />
+
+    <item
+        android:id="@+id/versao"
+        android:orderInCategory="900"
+        android:title="Versão 31 (1.31)" />
+
+    <item
+        android:id="@+id/desenvolvedor"
+        android:orderInCategory="910"
+        android:title="Desenvolvedor" />
+
+</menu>

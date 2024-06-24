@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TelaContagem">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Activities.TelaContagem">
+
+        <EditText
+            android:id="@+id/editEndereco"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_editi_text"
+            android:enabled="false"
+            android:inputType="numberDecimal"
+            android:paddingStart="8dp"
+            android:text=""
+            android:maxLength="4"
+            android:textColor="@color/preto"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewAddress"
+            app:layout_constraintTop_toTopOf="@+id/textViewAddress" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Endereço:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNumeroContagem" />
+
+        <EditText
+            android:id="@+id/editDescricao"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_editi_text"
+            android:enabled="false"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:paddingStart="8dp"
+            android:textColor="@color/preto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/editCodigo"
+            app:layout_constraintTop_toTopOf="@+id/textViewDescription" />
+
+        <EditText
+            android:id="@+id/editCodigo"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/shape_editi_text"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:maxLength="20"
+            android:textColor="@color/preto"
+            app:layout_constraintEnd_toStartOf="@+id/btnLimpar"
+            app:layout_constraintStart_toStartOf="@+id/editEndereco"
+            app:layout_constraintTop_toTopOf="@+id/textViewCode" />
+
+        <EditText
+            android:id="@+id/editQuantidade"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/shape_editi_text"
+            android:inputType="number"
+            android:padding="4dp"
+            android:text=""
+            android:textColor="@color/preto"
+            android:textSize="36sp"
+            android:maxLength="6"
+            app:layout_constraintEnd_toStartOf="@+id/btnConfirmarQuantidade"
+            app:layout_constraintStart_toStartOf="@+id/editDescricao"
+            app:layout_constraintTop_toBottomOf="@+id/editDescricao" />
+
+        <TextView
+            android:id="@+id/textViewQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Quantidade:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDescricao" />
+
+        <Button
+            android:id="@+id/btnConfirmarQuantidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="Confirmar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDescricao" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Descrição:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editCodigo" />
+
+        <TextView
+            android:id="@+id/textViewCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Código:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editEndereco" />
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toobar_customizada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textNumeroContagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Contagem:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnItensLidos" />
+
+        <Button
+            android:id="@+id/btnScaner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/botao_redondo"
+            android:text="Scaner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editQuantidade" />
+
+        <EditText
+            android:id="@+id/editNumeroContagem"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/shape_editi_text"
+            android:inputType="number"
+            android:paddingStart="8dp"
+            android:textColor="@color/preto"
+            android:textSize="36sp"
+            android:maxLength="1"
+            app:layout_constraintBottom_toBottomOf="@+id/btnConfirmarContagem"
+            app:layout_constraintEnd_toStartOf="@+id/btnConfirmarContagem"
+            app:layout_constraintStart_toStartOf="@+id/editEndereco"
+            app:layout_constraintTop_toTopOf="@+id/btnConfirmarContagem" />
+
+        <Button
+            android:id="@+id/btnConfirmarContagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="OK"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textNumeroContagem" />
+
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Limpar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editCodigo" />
+
+        <Button
+            android:id="@+id/btnItensLidos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="Itens Lidos"
+            app:layout_constraintEnd_toStartOf="@+id/btnTotais"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include" />
+
+        <Button
+            android:id="@+id/btnTotais"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="Totais"
+            app:layout_constraintBottom_toBottomOf="@+id/btnItensLidos"
+            app:layout_constraintEnd_toStartOf="@+id/btnFecharEndereco"
+            app:layout_constraintStart_toEndOf="@+id/btnItensLidos"
+            app:layout_constraintTop_toTopOf="@+id/btnItensLidos" />
+
+        <Button
+            android:id="@+id/btnFecharEndereco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text=" Fechar Endereço"
+            app:layout_constraintBottom_toBottomOf="@+id/btnItensLidos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnTotais"
+            app:layout_constraintTop_toTopOf="@+id/btnItensLidos" />
+
+        <Switch
+            android:id="@+id/switchTipoContagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto"
+            android:textColor="@color/preto"
+            android:trackTint="@color/vermelho"
+            android:thumbTint="@drawable/thumb_tint_selector"
+            android:thumbTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQuantity"
+            app:layout_constraintStart_toStartOf="@+id/textViewQuantity"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQuantity"
+            tools:ignore="UseSwitchCompatOrMaterialXml">
+        </Switch>
+
+
+
+        <EditText
+            android:id="@+id/edtCodigoFocus"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

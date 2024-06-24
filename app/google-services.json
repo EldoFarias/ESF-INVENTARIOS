@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "625479228788",
+    "project_id": "esf-inventarios",
+    "storage_bucket": "esf-inventarios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625479228788:android:68291bfc5d9670ffa7a021",
+        "android_client_info": {
+          "package_name": "com.farias.inventario"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYrLkNN4Z16HpaUwrMNpv8759MIUrshgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

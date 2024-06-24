@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemlListaProduto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/branco">
+
+
+    <TextView
+        android:id="@+id/txtCodigoProduto"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/shape_editi_text"
+        android:gravity="center"
+        android:text="Codigo"
+        android:textColor="@color/preto"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtCodigoAuxiliarProduto"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCodigoAuxiliarProduto"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/shape_editi_text"
+        android:gravity="center"
+        android:text="CodigoAuxiliar"
+        android:textColor="@color/preto"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCodigoProduto"
+        app:layout_constraintEnd_toStartOf="@+id/txtDescricaoProdutoP"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtCodigoProduto"
+        app:layout_constraintTop_toTopOf="@+id/txtCodigoProduto" />
+
+    <TextView
+        android:id="@+id/txtDescricaoProdutoP"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/shape_editi_text"
+        android:gravity="center"
+        android:text="Descrição do produto"
+        android:textColor="@color/preto"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCodigoAuxiliarProduto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/txtCodigoAuxiliarProduto"
+        app:layout_constraintTop_toTopOf="@+id/txtCodigoAuxiliarProduto" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

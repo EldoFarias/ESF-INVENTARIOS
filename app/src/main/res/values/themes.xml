@@ -1,0 +1,79 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Inventario" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Inventario" parent="Base.Theme.Inventario" />
+
+    <!-- Tema Escuro Moderno -->
+    <style name="AppTheme.Dark" parent="Base.Theme.Inventario">
+        <item name="colorPrimary">@color/color_primary_dark</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant_dark</item>
+        <item name="colorOnPrimary">@color/color_on_primary_dark</item>
+        <item name="colorSecondary">@color/color_secondary_dark</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant_dark</item>
+        <item name="colorOnSecondary">@color/color_on_secondary_dark</item>
+        <item name="android:colorBackground">@color/color_background_dark</item>
+        <item name="android:windowBackground">@color/color_background_dark</item>
+    </style>
+
+    <!-- Tema Azul Celeste -->
+    <style name="AppTheme.Celeste" parent="Base.Theme.Inventario">
+        <item name="colorPrimary">@color/color_primary_celeste</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant_celeste</item>
+        <item name="colorOnPrimary">@color/color_on_primary_celeste</item>
+        <item name="colorSecondary">@color/preto</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant_celeste</item>
+        <item name="colorOnSecondary">@color/color_on_secondary_celeste</item>
+        <item name="android:colorBackground">@color/color_background_celeste</item>
+        <item name="android:windowBackground">@color/color_background_celeste</item>
+        <item name="android:textColorHint">@color/branco</item>
+    </style>
+
+    <!-- Tema Cinza Urbano -->
+    <style name="AppTheme.Urbano" parent="Base.Theme.Inventario">
+        <item name="colorPrimary">@color/color_primary_urbano</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant_urbano</item>
+        <item name="colorOnPrimary">@color/color_on_primary_urbano</item>
+        <item name="colorSecondary">@color/color_secondary_urbano</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant_urbano</item>
+        <item name="colorOnSecondary">@color/color_on_secondary_urbano</item>
+        <item name="android:colorBackground">@color/color_background_urbano</item>
+        <item name="android:windowBackground">@color/color_background_urbano</item>
+    </style>
+
+    <!-- Tema Noturno -->
+    <style name="AppTheme.Night" parent="Base.Theme.Inventario">
+        <item name="colorPrimary">@color/color_primary_night</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant_night</item>
+        <item name="colorOnPrimary">@color/color_on_primary_night</item>
+        <item name="colorSecondary">@color/color_secondary_night</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant_night</item>
+        <item name="colorOnSecondary">@color/color_on_secondary_night</item>
+        <item name="android:colorBackground">@color/color_background_night</item>
+        <item name="android:windowBackground">@color/color_background_night</item>
+    </style>
+
+    <!-- Arquivo: res/values/styles.xml -->
+
+    <style name="CustomAlertDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <!-- Customize the dialog background color -->
+        <item name="android:background">@color/color_primary_variant_urbano</item>
+        <!-- Customize the button background color -->
+        <item name="colorAccent">@color/custom_button_background</item>
+        <!-- Customize the text color -->
+        <item name="android:textColor">@color/custom_dialog_text_color</item>
+        <!-- Customize the button text color -->
+        <item name="android:buttonBarPositiveButtonStyle">@style/CustomDialogButton</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/CustomDialogButton</item>
+    </style>
+
+    <style name="CustomDialogButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/custom_button_background</item>
+        <item name="android:textColor">@color/custom_button_text_color</item>
+    </style>
+
+
+</resources>

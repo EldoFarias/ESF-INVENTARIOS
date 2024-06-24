@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemlListaDivergencia"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtEndereco"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight=".4"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:background="@drawable/shape_editi_text"
+        android:padding="2dp"
+        android:text="0001"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+
+    <TextView
+        android:id="@+id/txtCodigoProdutoDivergencia"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight=".6"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:background="@drawable/shape_editi_text"
+        android:padding="2dp"
+        android:gravity="center"
+        android:text="7896046100100"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+
+    <TextView
+        android:id="@+id/txtDescricaoProduto"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight=".8"
+        android:maxLength="100"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:background="@drawable/shape_editi_text"
+        android:padding="2dp"
+        android:gravity="center"
+        android:text="Descricao de produ"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+
+    <TextView
+        android:id="@+id/txtQtd1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight=".35"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:background="@drawable/shape_editi_text"
+        android:padding="2dp"
+        android:text="1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+
+    <TextView
+        android:id="@+id/txtQtd2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight=".35"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:background="@drawable/shape_editi_text"
+        android:padding="2dp"
+        android:text="2"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+
+    <TextView
+        android:id="@+id/txtQtd3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight=".35"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:background="@drawable/shape_editi_text"
+        android:padding="2dp"
+        android:text="15"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+</LinearLayout>
+

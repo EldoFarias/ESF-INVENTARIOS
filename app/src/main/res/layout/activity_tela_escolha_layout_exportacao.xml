@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TelaEscolhaLayoutExportacao">
+
+    <include
+        android:id="@+id/includeToolbarEscolherLayout"
+        layout="@layout/toobar_customizada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLayoutInvMC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_editi_text_azul"
+        android:padding="8dp"
+        android:text="LAYOUT EXPORTAÇÃO INVMC"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnInvMC"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="2.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeToolbarEscolherLayout" />
+
+    <Button
+        android:id="@+id/btnInvMC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Exportar"
+        app:layout_constraintBottom_toBottomOf="@+id/txtLayoutInvMC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/txtLayoutInvMC"
+        app:layout_constraintTop_toTopOf="@+id/txtLayoutInvMC" />
+
+
+    <TextView
+        android:id="@+id/txtOutrosLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_editi_text_azul"
+        android:padding="8dp"
+        android:text="CÓDIGO QUANTIDADE"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCodigoQuantidade"
+        app:layout_constraintHorizontal_weight="2.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLayoutInvMC">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btnCodigoQuantidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Exportar"
+        app:layout_constraintBottom_toBottomOf="@+id/txtOutrosLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/txtOutrosLayout"
+        app:layout_constraintTop_toTopOf="@+id/txtOutrosLayout">
+
+    </Button>
+
+
+    <TextView
+        android:id="@+id/txtCodigoDescricaoQuantidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_editi_text_azul"
+        android:padding="8dp"
+        android:text="CÓDIGO DESCRIÇÃO QUANTIDADE"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCodigoDescricaoQuantidade"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOutrosLayout"
+        app:layout_goneMarginEnd="8dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btnCodigoDescricaoQuantidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Exportar"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCodigoDescricaoQuantidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/txtCodigoDescricaoQuantidade"
+        app:layout_constraintTop_toTopOf="@+id/txtCodigoDescricaoQuantidade">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Activities.TelaPrincipal">
+
+        <include
+            android:id="@+id/includeTelaPrincipal"
+            layout="@layout/toobar_customizada"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnEntrarEnderecos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/color_secondary_urbano"
+            android:text="Ir para contagens"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeTelaPrincipal" />
+
+        <TextView
+            android:id="@+id/txtQtdEnderecoTotal"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/branco"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txtQdtEnderecoAberto"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/txtQdtEnderecoAberto"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/branco"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtQtdEnderecoTotal"
+            app:layout_constraintEnd_toStartOf="@+id/txtQdtEnderecoFechados"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/txtQtdEnderecoTotal"
+            app:layout_constraintTop_toTopOf="@+id/txtQtdEnderecoTotal" />
+
+        <TextView
+            android:id="@+id/txtQdtEnderecoFechados"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/branco"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtQdtEnderecoAberto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/txtQdtEnderecoAberto"
+            app:layout_constraintTop_toTopOf="@+id/txtQdtEnderecoAberto" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="TOTAL ENDEREÇO"
+            android:textAlignment="center"
+            android:textColor="@color/branco"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/txtQtdEnderecoTotal"
+            app:layout_constraintStart_toStartOf="@+id/txtQtdEnderecoTotal"
+            app:layout_constraintTop_toBottomOf="@+id/btnEntrarEnderecos" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="ABERTO"
+            android:textAlignment="center"
+            android:textColor="@color/branco"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtQdtEnderecoAberto"
+            app:layout_constraintEnd_toEndOf="@+id/txtQdtEnderecoAberto"
+            app:layout_constraintStart_toStartOf="@+id/txtQdtEnderecoAberto"
+            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="FECHADO"
+            android:textAlignment="center"
+            android:textColor="@color/branco"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtQdtEnderecoFechados"
+            app:layout_constraintEnd_toEndOf="@+id/txtQdtEnderecoFechados"
+            app:layout_constraintStart_toStartOf="@+id/txtQdtEnderecoFechados"
+            app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+
+        <TextView
+
+            android:id="@+id/txtTotalPcsPrimeiraCont"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/branco"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txtTotalPcsSegundaCont"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <TextView
+
+            android:id="@+id/txtTotalPcsSegundaCont"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/branco"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtTotalPcsPrimeiraCont"
+            app:layout_constraintEnd_toStartOf="@+id/txtTotalPcsTerceiraCont"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/txtTotalPcsPrimeiraCont"
+            app:layout_constraintTop_toTopOf="@+id/txtTotalPcsPrimeiraCont" />
+
+        <TextView
+            android:id="@+id/txtTotalPcsTerceiraCont"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/branco"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtTotalPcsSegundaCont"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/txtTotalPcsSegundaCont"
+            app:layout_constraintTop_toTopOf="@+id/txtTotalPcsSegundaCont" />
+
+
+        <TextView
+
+            android:id="@+id/textView25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="ITENS 1º CONT."
+            android:textAlignment="center"
+            android:textColor="@color/branco"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/txtTotalPcsPrimeiraCont"
+            app:layout_constraintStart_toStartOf="@+id/txtTotalPcsPrimeiraCont"
+            app:layout_constraintTop_toBottomOf="@+id/txtQtdEnderecoTotal" />
+
+
+        <TextView
+
+            android:id="@+id/textView26"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="ITENS 2º CONT."
+            android:textAlignment="center"
+            android:textColor="@color/branco"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtTotalPcsSegundaCont"
+            app:layout_constraintEnd_toEndOf="@+id/txtTotalPcsSegundaCont"
+            app:layout_constraintStart_toStartOf="@+id/txtTotalPcsSegundaCont"
+            app:layout_constraintTop_toTopOf="@+id/textView25"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="ITENS 3º CONT."
+            android:textAlignment="center"
+            android:textColor="@color/branco"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtTotalPcsTerceiraCont"
+            app:layout_constraintEnd_toEndOf="@+id/txtTotalPcsTerceiraCont"
+            app:layout_constraintStart_toStartOf="@+id/txtTotalPcsTerceiraCont"
+            app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+
+        <TextView
+            android:id="@+id/txtQdtContadoCabecalho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="QTD pç 1º CONT."
+            android:textAlignment="center"
+            android:textColor="@color/branco"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/txtQtdContado1"
+            app:layout_constraintStart_toStartOf="@+id/txtQtdContado1"
+            app:layout_constraintTop_toBottomOf="@+id/txtTotalPcsPrimeiraCont" />
+
+        <TextView
+
+            android:id="@+id/txtQtdContado1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/branco"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/txtQdtContadoCabecalho"
+            app:layout_constraintEnd_toStartOf="@+id/txtQtdContado2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtQdtContadoCabecalho" />
+
+
+        <TextView
+
+            android:id="@+id/txtQtdContado2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/branco"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtQtdContado1"
+            app:layout_constraintEnd_toStartOf="@+id/txtQtdContado3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtQtdContado1"
+            app:layout_constraintTop_toTopOf="@+id/txtQtdContado1" />
+
+        <TextView
+
+            android:id="@+id/txtQtdContado3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/branco"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtQtdContado2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtQtdContado2"
+            app:layout_constraintTop_toTopOf="@+id/txtQtdContado2" />
+
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="QTD pç 2º CONT."
+            android:textAlignment="center"
+            android:textColor="@color/branco"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtQtdContado2"
+            app:layout_constraintEnd_toEndOf="@+id/txtQtdContado2"
+            app:layout_constraintStart_toStartOf="@+id/txtQtdContado2"
+            app:layout_constraintTop_toTopOf="@+id/txtQdtContadoCabecalho" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary_urbano"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="QTD pç 3º CONT."
+            android:textAlignment="center"
+            android:textColor="@color/branco"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/txtQtdContado3"
+            app:layout_constraintStart_toStartOf="@+id/txtQtdContado3"
+            app:layout_constraintTop_toTopOf="@+id/textView30" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/itemUsuario"
+    android:padding="4dp"
+    android:background="@color/backgrounItemUsuario">
+
+
+
+
+        <TextView
+            android:id="@+id/txtCodigoAcesso"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:background="@drawable/shape_editi_text">
+
+        </TextView>
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="45dp">
+
+    </View>
+
+        <TextView
+            android:id="@+id/txtNomeDeUsuario"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/shape_editi_text"
+            tools:ignore="RtlCompat">
+
+        </TextView>
+
+</LinearLayout>

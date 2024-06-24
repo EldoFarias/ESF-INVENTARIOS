@@ -1,0 +1,51 @@
+<!-- Arquivo: res/layout/custom_cardview.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    android:elevation="4dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:radius="8dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ÁREA RESTRITA, PROTEGIDO POR SENHA."
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:elevation="5dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/vermelho"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp" >
+
+        </TextView>
+
+
+        <!-- Conteúdo do CardView aqui -->
+        <EditText
+            android:id="@+id/editTextSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:hint="Digite sua senha de segurança"
+            android:padding="5dp"
+            android:elevation="5dp"
+            android:inputType="textPassword"
+            android:textColor="@color/preto"
+            android:background="@drawable/shape_editi_text_azul" />
+
+</LinearLayout>

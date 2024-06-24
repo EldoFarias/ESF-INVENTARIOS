@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">inventario</string>
+    <string name="texto_layout_importacao">
+
+
+        Manual de Importação para Aplicativo de Inventários
+Introdução
+\n\n
+Este manual detalha o processo de importação de
+arquivos de texto contendo dados de inventário para
+o aplicativo. O objetivo é auxiliar o usuário na
+preparação e formatação correta do arquivo,
+garantindo uma importação bem-sucedida.
+\n\n
+
+Tipos de Importação
+\n\n
+
+O aplicativo oferece duas opções principais
+para importação de dados:
+\n\n
+
+1. Importação de Arquivo com Código Principal e Descrição
+\n\n
+
+Esse método é ideal para arquivos que contêm
+apenas duas colunas: código principal e descrição do item.
+\n\n
+
+2. Importação de Arquivo com Código Principal,
+Código Auxiliar e Descrição
+\n\n
+
+Essa opção é mais completa e permite a
+inclusão de um código auxiliar para cada item,
+além do código principal e da descrição.
+\n\n
+
+Preparação do Arquivo de Texto
+\n
+
+1. Escolha do Editor de Texto
+\n
+
+Utilize o editor de sua preferência,
+como o Bloco de Notas ou qualquer
+outro editor de texto simples.
+\n\n
+
+2. Codificação do Arquivo
+\n
+
+Salve o arquivo com a codificação correta,
+preferencialmente UTF-8, para garantir que
+os caracteres especiais sejam exibidos corretamente.
+\n\n
+3. Extensão do Arquivo
+\n
+
+Finalize o nome do arquivo com a extensão .txt
+para que seja reconhecido pelo aplicativo.
+\n\n
+
+Formatação do Arquivo
+\n
+Estrutura do Arquivo:
+\n
+
+O arquivo deve ser organizado em linhas,
+onde cada linha representa um item do inventário.
+As colunas do arquivo devem ser separadas
+por um caractere delimitador, que pode ser definido
+nas configurações do aplicativo (vírgula, ponto e vírgula, etc.).
+\n
+Cada coluna contém um tipo específico de informação:
+\n
+Coluna 1: Código principal do item
+\n
+Coluna 2: Descrição do item (opcional)
+\n
+Coluna 3: Código auxiliar do item
+(opcional, presente apenas na opção de importação 2)
+\n\n
+Exemplo de Formatação:
+\n
+
+7896046100100;Café pele
+\n
+7896046100220;Café brasil
+\n
+7896046100500;Café União
+\n\n
+Observações:
+\n\n
+Utilize apenas um caractere delimitador por todo o arquivo.\n
+Evite espaços extras ou caracteres especiais desnecessários.\n
+Certifique-se de que não há linhas vazias no arquivo.\n\n
+Importação do Arquivo\n\n
+
+Procedimento:\n\n
+
+Abra o aplicativo de inventário.\n
+Acesse a tela de importação de dados.\n
+Selecione a opção de importação
+desejada (código principal e descrição
+ou código principal, código auxiliar e descrição).\n
+Escolha o arquivo de texto preparado anteriormente.\n
+Defina o caractere delimitador utilizado no arquivo.\n
+Revise as informações exibidas na tela para
+garantir que estejam corretas.\n
+Inicie a importação dos dados.\n\n
+
+Dicas Adicionais\n\n
+
+Utilize planilhas eletrônicas como Excel
+ou LibreOffice para organizar seus dados
+antes de criar o arquivo de texto.\n
+
+Salve cópias de backup dos seus arquivos de
+importação para fins de segurança.\n
+
+Em caso de dúvidas ou problemas durante a
+importação, consulte o manual do aplicativo
+ou entre em contato com o suporte técnico.\n\n
+
+Conclusão\n\n
+
+Ao seguir as instruções deste manual,
+você estará apto a importar seus dados de
+inventário para o aplicativo de forma rápida,
+fácil e segura.\n\n
+
+Lembre-se:
+\n\n
+
+Este manual apresenta apenas exemplos simples. \n\n
+Você pode ter diversas linhas no mesmo arquivo de importação.\n
+A formatação do arquivo é crucial para o sucesso da importação.\n
+Em caso de dúvidas, consulte o manual do
+aplicativo ou suporte técnico.
+    </string>
+
+    <string name="msg_assinaturas">
+        🥳 Acesse todo o conteúdo do nosso app de forma GRATUITA por 7 dias! \n\n
+        ✅ Basta selecionar o plano de 1 semana e a promoção será ativada automaticamente.\n\n
+        📅 Lembre-se, você poderá cancelar a qualquer momento sem custo dentro do prazo de testes.\n\n
+        Aproveite essa oportunidade e explore tudo o que temos a oferecer! 🌟
+        </string>
+
+    <string name="msgDesenvolvedor">
+        Converse com o desenvolvedor,\n
+        tire suas dúvidas, dê sugestões, sugira \n
+        melhorias, ajustes, customizações, etc.\n
+        Basta usar os canais abaixo.</string>
+
+
+    <string name="msgWhatsAppParaDesenvolvedor">
+        Olá, estou usando o seu app (ESF INVENTÁRIOS), podemos conversar?\nGostaria de tirar dúvidas e ou dar sugestões.</string>
+    <string name="msgSenhaSeguranca">
+        INFORME UMA SENHA DE SEGURANÇA DIFERENTE DA DEFAULT (99999), ASSIM VOCÊ RESTRINGE O ACESSO NÃO AUTORIZADO A PARTE ADMINISTRATIVA DO APLICATIVO.
+    </string>
+
+</resources>

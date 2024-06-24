@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgrounTelaContagem"
+    tools:context=".Activities.TelaLicenciamento">
+
+    <include
+        android:id="@+id/includeToolbarLicenciamento"
+        layout="@layout/toobar_customizada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/expiracaoLicenca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carregando dados da licença..."
+        android:textColor="@color/black"
+        android:background="@drawable/shape_editi_text_azul"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn1Dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Licença de 1 dia, valor total RS 10,00" />
+
+    <Button
+        android:id="@+id/btn5Dias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"
+        android:text="Licença de 5 dias, valor total RS 42,50" />
+
+    <Button
+        android:id="@+id/btn10Dias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"
+        android:text="Licença de 10 dias, valor total RS 80,00" />
+
+    <Button
+        android:id="@+id/btn15Dias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"
+        android:text="Licença de 15 dias, valor total RS 112,50" />
+
+    <Button
+        android:id="@+id/btn30Dias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"
+        android:text="Licença de 20 dias, valor total RS 140,00" />
+
+    <Button
+        android:id="@+id/btn6Meses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"
+        android:text="Licença de 25 dias, valor total RS 162,50" />
+
+    <Button
+        android:id="@+id/btn1Ano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"
+        android:text="Licença de 30 dias, valor total RS 180,00" />
+
+
+</LinearLayout>

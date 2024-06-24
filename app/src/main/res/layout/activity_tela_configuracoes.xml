@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/includeTelaConfiguracoes"
+        layout="@layout/toobar_customizada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_buttons"
+        android:layout_below="@+id/includeTelaConfiguracoes"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                tools:context=".Activities.TelaConfiguracoes">
+
+
+                <TextView
+                    android:id="@+id/txtSenha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_secondary_urbano"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="@string/msgSenhaSeguranca"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@+id/spinerDelimitador"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinerDelimitador" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@color/color_secondary_urbano"
+                    android:padding="4dp"
+                    android:text="TRABALHAR COM BASE IMPORTADA"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toStartOf="@+id/switchBase"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/includeTelaConfiguracoes"
+                    tools:ignore="NotSibling" />
+
+                <Switch
+                    android:id="@+id/switchBase"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/preto"
+                    android:thumbTint="@drawable/thumb_tint_selector"
+                    android:thumbTintMode="src_in"
+                    android:trackTint="@color/vermelho"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight=".2"
+                    app:layout_constraintStart_toEndOf="@+id/textView5"
+                    app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+                <Spinner
+                    android:id="@+id/spinerDelimitador"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="Delimitador campos arquivo"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@+id/textView5"
+                    app:layout_constraintStart_toStartOf="@+id/textView5"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/txtCodPrincipalSwitch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_secondary_urbano"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="CÓDIGO PRINCIPAL"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/switchCodigoPrincipal"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtSenhaAcesso" />
+
+                <EditText
+                    android:id="@+id/edtit_QtdCaracteresCodPrincipal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_editi_text"
+                    android:enabled="false"
+                    android:hint="Quantidade de caracteres"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:padding="4dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/txtCodPrincipalSwitch"
+                    app:layout_constraintStart_toStartOf="@+id/txtCodPrincipalSwitch"
+                    app:layout_constraintTop_toBottomOf="@+id/txtCodPrincipalSwitch" />
+
+                <Switch
+                    android:id="@+id/switchCodigoPrincipal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/preto"
+                    android:thumbTint="@drawable/thumb_tint_selector"
+                    android:thumbTintMode="src_in"
+                    android:trackTint="@color/vermelho"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtCodPrincipalSwitch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight=".2"
+                    app:layout_constraintStart_toEndOf="@+id/txtCodPrincipalSwitch"
+                    app:layout_constraintTop_toTopOf="@+id/txtCodPrincipalSwitch" />
+
+                <Switch
+                    android:id="@+id/switchDescricao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/preto"
+                    android:thumbTint="@drawable/thumb_tint_selector"
+                    android:thumbTintMode="src_in"
+                    android:trackTint="@color/vermelho"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtDescricaolSwitch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_weight=".2"
+                    app:layout_constraintStart_toEndOf="@+id/txtDescricaolSwitch"
+                    app:layout_constraintTop_toTopOf="@+id/txtDescricaolSwitch" />
+
+                <TextView
+                    android:id="@+id/txtCodAuxiliarSwitch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/color_secondary_urbano"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="CÓDIGO AUXILIAR"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/switchCodigoAuxiliar"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtit_QtdCaracteresCodPrincipal" />
+
+                <EditText
+                    android:id="@+id/edtit_QtdCaracteresCodAuxiliar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_editi_text"
+                    android:enabled="false"
+                    android:hint="Quantidade de caracteres"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:padding="4dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/txtCodAuxiliarSwitch"
+                    app:layout_constraintStart_toStartOf="@+id/txtCodAuxiliarSwitch"
+                    app:layout_constraintTop_toBottomOf="@+id/txtCodAuxiliarSwitch" />
+
+                <Switch
+                    android:id="@+id/switchCodigoAuxiliar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/preto"
+                    android:thumbTint="@drawable/thumb_tint_selector"
+                    android:thumbTintMode="src_in"
+                    android:trackTint="@color/vermelho"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtCodAuxiliarSwitch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight=".2"
+                    app:layout_constraintStart_toEndOf="@+id/txtCodAuxiliarSwitch"
+                    app:layout_constraintTop_toTopOf="@+id/txtCodAuxiliarSwitch" />
+
+                <TextView
+                    android:id="@+id/txtDescricaolSwitch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/color_secondary_urbano"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="DESCRIÇÃO PRODUTO"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/switchDescricao"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtit_QtdCaracteresCodAuxiliar" />
+
+                <TextView
+                    android:id="@+id/edtiDescricaoDica"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_editi_text"
+                    android:ellipsize="end"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="Quantidade de caracteres"
+                    android:inputType="textMultiLine"
+                    android:padding="12dp"
+                    android:text="Se habilitado, a descrição poderá ter um tamanho máximo de 100 caracteres."
+                    android:textAlignment="center"
+                    android:textColor="@color/preto"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/txtDescricaolSwitch"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtDescricaolSwitch"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDescricaolSwitch" />
+
+                <EditText
+                    android:id="@+id/edtSenhaAcesso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_editi_text"
+                    android:inputType="text"
+                    android:text="99999"
+                    android:textColor="#000000"
+                    android:padding="4dp"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="@+id/txtSenha"
+                    app:layout_constraintStart_toStartOf="@+id/txtSenha"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSenha" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Layout para os botões -->
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnGravar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="GRAVAR"
+            android:backgroundTint="@color/color_secondary_urbano"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/color_secondary_urbano"
+            android:text="EDITAR"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

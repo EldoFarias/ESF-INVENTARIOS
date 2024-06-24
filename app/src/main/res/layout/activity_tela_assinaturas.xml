@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/msg_assinaturas"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMostarOpcoesAssinaturas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Mostrar opções de assinaturas"/>
+
+    <ScrollView
+        android:id="@+id/scroolView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:elevation="5dp"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnComprar1Semana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprar 1 Semana" />
+
+        <Button
+            android:id="@+id/btnComprar1Mes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprar 1 Mês" />
+
+        <Button
+            android:id="@+id/btnComprar3Meses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprar 3 Meses" />
+
+        <Button
+            android:id="@+id/btnComprar6Meses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprar 6 Meses" />
+
+        <Button
+            android:id="@+id/btnComprar1Ano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprar 1 Ano" />
+
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+
+
+

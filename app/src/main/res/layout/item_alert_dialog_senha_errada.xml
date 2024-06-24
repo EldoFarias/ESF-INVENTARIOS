@@ -1,0 +1,40 @@
+<!-- Arquivo: res/layout/custom_cardview.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    android:elevation="4dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:radius="8dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="A senha digitada não confere com a senha cadastrada."
+            android:textColor="@color/vermelho"
+            android:padding="25dp"
+            android:elevation="5dp"
+            android:textSize="25sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/amarelo"
+            android:textStyle="bold"
+            android:textAlignment="center"
+             >
+
+        </TextView>
+
+
+        <!-- Conteúdo do CardView aqui -->
+
+</LinearLayout>

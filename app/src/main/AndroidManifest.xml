@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingLeanbackLauncher">
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icone_inventario"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icone_inventario"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Urbano"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.TelaDesenvolvedor"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaAssinaturas"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaConfiguracoes"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaLayoutImportacao"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaEscolhaRelatorio"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaEscolhaLayoutExportacao"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaAnalisarDivergencia"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaItensLidos"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaUsuarios"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaCadastroUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaErrosImportacaoProdutos"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaCadastroProdutos"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaProdutos"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaListagemEnderecos"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaCadastroEndereco"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".Activities.TelaContagem"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".Activities.TelaPrincipal"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".Activities.TelaLogin"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

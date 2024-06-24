@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TelaAnalisarDivergencia">
+
+    <include
+        android:id="@+id/includeToolbarAnalisarDivergencias"
+        layout="@layout/toobar_customizada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editFiltroDivergencia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_editi_text"
+        android:hint="Filtrar endereço"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="@color/preto"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btnFiltarDivergencia"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeToolbarAnalisarDivergencias" />
+
+    <Button
+        android:id="@+id/btnFiltarDivergencia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight=".4"
+        android:text="Ok"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editFiltroDivergencia"
+        app:layout_constraintEnd_toStartOf="@+id/btnLimparDivergencias"
+        app:layout_constraintStart_toEndOf="@+id/editFiltroDivergencia"
+        app:layout_constraintTop_toTopOf="@+id/editFiltroDivergencia" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvItensDivergencia"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cabecalhoDivergencias"
+        tools:listitem="@layout/item_divergencia" />
+
+    <Button
+        android:id="@+id/btnLimparDivergencias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Limpar"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_weight=".5"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFiltarDivergencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFiltarDivergencia"
+        app:layout_constraintTop_toTopOf="@+id/btnFiltarDivergencia" />
+
+    <LinearLayout
+        android:id="@+id/cabecalhoDivergencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFiltroDivergencia">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:ellipsize="end"
+            android:layout_marginEnd="1dp"
+            android:layout_weight=".4"
+            android:background="@color/color_secondary_urbano"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="ENDEREÇO"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".6"
+            android:background="@color/color_secondary_urbano"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_marginEnd="1dp"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="CÓDIGO"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".8"
+            android:background="@color/color_secondary_urbano"
+            android:ellipsize="end"
+            android:layout_marginEnd="1dp"
+            android:gravity="center"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="DESCRIÇÃO"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".35"
+            android:background="@color/color_secondary_urbano"
+            android:ellipsize="end"
+            android:layout_marginEnd="1dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="1ª"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".35"
+            android:background="@color/color_secondary_urbano"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_marginEnd="1dp"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="2ª"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".35"
+            android:background="@color/color_secondary_urbano"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="3ª"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

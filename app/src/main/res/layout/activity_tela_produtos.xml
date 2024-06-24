@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TelaProdutos">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+
+        <TextView
+            android:id="@+id/txtCodigoProduto"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:background="@color/color_secondary_urbano"
+            android:gravity="center"
+            android:text="Código"
+            android:textColor="@color/branco"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtCodigoAuxiliarProduto"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCodigoAuxiliarProduto"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:background="@color/color_secondary_urbano"
+            android:gravity="center"
+            android:text="Código Auxiliar"
+            android:textColor="@color/branco"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtCodigoProduto"
+            app:layout_constraintEnd_toStartOf="@+id/txtDescricaoProdutoP"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtCodigoProduto"
+            app:layout_constraintTop_toTopOf="@+id/txtCodigoProduto" />
+
+        <TextView
+            android:id="@+id/txtDescricaoProdutoP"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:background="@color/color_secondary_urbano"
+            android:gravity="center"
+            android:text="Descrição do produto"
+            android:textColor="@color/branco"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtCodigoAuxiliarProduto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/txtCodigoAuxiliarProduto"
+            app:layout_constraintTop_toTopOf="@+id/txtCodigoAuxiliarProduto" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProdutos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_produto" />
+
+    <include
+        android:id="@+id/includeToolbarProdutos"
+        layout="@layout/toobar_customizada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Importar"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imgImportar"
+        app:layout_constraintStart_toStartOf="@+id/imgImportar"
+        app:layout_constraintTop_toBottomOf="@+id/imgImportar" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produtos"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imgImportar"
+        app:layout_constraintStart_toStartOf="@+id/imgImportar"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ImageView
+        android:id="@+id/imgCadastrar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgImportar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeToolbarProdutos"
+        app:srcCompat="@drawable/registro" />
+
+    <ImageView
+        android:id="@+id/imgExluirTudo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgErrosImportacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgErrosImportacao"
+        app:layout_constraintTop_toTopOf="@+id/imgErrosImportacao"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/excluir" />
+
+    <ImageView
+        android:id="@+id/imgImportar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCadastrar"
+        app:layout_constraintEnd_toStartOf="@+id/imgErrosImportacao"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgCadastrar"
+        app:layout_constraintTop_toTopOf="@+id/imgCadastrar"
+        app:srcCompat="@drawable/banco_dados_80x80" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imgCadastrar"
+        app:layout_constraintStart_toStartOf="@+id/imgCadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/imgCadastrar" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produtos"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imgCadastrar"
+        app:layout_constraintStart_toStartOf="@+id/imgCadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exluir todos"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imgExluirTudo"
+        app:layout_constraintStart_toStartOf="@+id/imgExluirTudo"
+        app:layout_constraintTop_toBottomOf="@+id/imgExluirTudo" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produtos"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imgExluirTudo"
+        app:layout_constraintStart_toStartOf="@+id/imgExluirTudo"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ImageView
+        android:id="@+id/imgErrosImportacao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgImportar"
+        app:layout_constraintEnd_toStartOf="@+id/imgExluirTudo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgImportar"
+        app:layout_constraintTop_toTopOf="@+id/imgImportar"
+        app:srcCompat="@drawable/bd_erro" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Erros de"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imgErrosImportacao"
+        app:layout_constraintStart_toStartOf="@+id/imgErrosImportacao"
+        app:layout_constraintTop_toBottomOf="@+id/imgErrosImportacao" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Importação"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imgErrosImportacao"
+        app:layout_constraintStart_toStartOf="@+id/imgErrosImportacao"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:progressBackgroundTint="#000000"
+        android:progressTint="#95FB04"
+        app:layout_constraintBottom_toBottomOf="@+id/rvProdutos"
+        app:layout_constraintEnd_toEndOf="@+id/rvProdutos"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
